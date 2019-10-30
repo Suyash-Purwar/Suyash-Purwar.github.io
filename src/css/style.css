@@ -1,0 +1,129 @@
+/* 
+    Project wide definitions
+    and utilities classes
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.u-margin-top-small { margin-top: 5px !important }
+.u-margin-top-medium { margin-top: 8px !important }
+.u-margin-top-large { margin-top: 12px !important }
+.u-margin-top-extra-large { margin-top: 20px !important }
+
+.u-margin-bottom-small { margin-bottom: 5px !important }
+.u-margin-bottom-medium { margin-bottom: 8px !important }
+.u-margin-bottom-large { margin-bottom: 12px !important }
+.u-margin-bottom-extra-large { margin-bottom: 20px !important }
+
+a {
+    text-decoration: none !important;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.primary-heading {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/* Navigation */
+.nav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    align-items: center;
+}
+
+.nav .nav-items {
+    right: 0;
+    position: absolute;
+    list-style-type: none;
+}
+
+.nav .nav-items .nav-item {
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.nav .nav-items .nav-item a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav .nav-logo {
+    width: 100%;
+}
+
+.nav .nav-logo img {
+    width: 150%;
+    position: relative;
+}
+
+
+
+
+/* Header */
+.header {
+    background-image: url("../images/background-1.png");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.header .header-content {
+    transform: translateY(-10px);
+}
+
+.header .header-profile-image {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    position: relative;
+}
+
+.header .header-content .paragraph {
+    width: 85%;
+    margin: 0 auto;
+}
