@@ -246,6 +246,43 @@ a {
     position: relative;
 }
 
+.social-banner {
+    background-image: url("../images/background-1.png");
+    padding: 55px 10px;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+.social-banner .social-links-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.social-banner .social-links-wrapper .social-link {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.social-banner .social-links-wrapper .social-link i {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .container {
         max-width: 750px;
@@ -295,6 +332,19 @@ a {
         display: block;
     }
 
+    .social-banner {
+        padding: 20px 0px;
+    }
+
+    .social-banner .social-links-wrapper .social-link {
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-banner .social-links-wrapper .social-link i {
+        font-size: 25px;
+    }
+
 
     /* Responsive styles for Utility classes */
     .u-margin-top-small { margin-top: 2px !important }
@@ -307,6 +357,14 @@ a {
     .u-margin-bottom-large { margin-bottom: 8px !important }
     .u-margin-bottom-extra-large { margin-bottom: 13px !important }
 }
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
     .nav {
@@ -345,6 +403,9 @@ a {
     }
 }
 
+
+
+
 @media screen and (max-width: 450px) {
     .primary-heading {
         font-size: 25px;
@@ -363,5 +424,20 @@ a {
 
     .header .header-content .header-profile-image {
         width: 45%;
+    }
+
+    .social-banner .social-links-wrapper {
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social-banner .social-links-wrapper .social-link {
+        width: 90%;
+        /* position: relative; */
+        border-radius: 0;
+    }
+
+    .social-banner .social-links-wrapper .social-link i {
+        font-size: 25px;
     }
 }
