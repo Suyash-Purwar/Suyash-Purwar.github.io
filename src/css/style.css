@@ -102,6 +102,14 @@ a {
     display: none
 }
 
+.nav .nav-burger i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 30px;
+    color: white;
+}
 
 
 /* Header */
@@ -135,6 +143,85 @@ a {
 }
 
 
+
+/* Sidebar */
+.sidebar {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .sidebar-content-box .sidebar-close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.sidebar .sidebar-content-box .sidebar-close i {
+    color: black;
+    font-size: 30px;
+}
+
+.sidebar-content-box {
+    z-index: 100;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: .5s ease all;
+    animation: nav-content-box .5s ease backwards;
+}
+
+.sidebar .sidebar-back-box {
+    z-index: 90;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transition: .5s cubic-bezier(.24,.82,.56,.93) all;
+    animation: nav-back-box .5s cubic-bezier(.24,.82,.56,.93);
+}
+
+@keyframes nav-content-box {
+    from {
+        transform: translateX(-100%);    
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes nav-back-box {
+    from {
+        transform: translateY(-100%);
+    } to {
+        transform: translateY(0%);
+    }
+}
+
+.sidebar .sidebar-content-box .sidebar-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    list-style: none;
+    width: 80%;
+}
+
+.sidebar .sidebar-content-box .sidebar-items .sidebar-item a {
+    display: block;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 900px) {
     .container {
         max-width: 750px;
@@ -160,16 +247,6 @@ a {
         display: block;
         position: relative;
     }
-
-    .nav .nav-burger i {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 20px;
-        font-size: 20px;
-        color: white;
-    }
-
     .header {
         background-position: center center;
     }
@@ -193,6 +270,11 @@ a {
 
     .header .header-content .paragraph {
         width: 100%;
+    }
+
+    .sidebar .sidebar-content-box .sidebar-items .sidebar-item a {
+        font-size: 20px;
+        margin: 30px 0;
     }
 }
 

@@ -34,11 +34,39 @@
                 </li>
             </ul>
 
-            <div class="nav-burger">
+            <div class="nav-burger" id="sidemenu_trigger">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </div>
+
+    <sidebar class="sidebar" id="sidebar">
+        <div class="sidebar-back-box"></div>
+
+        <div class="sidebar-content-box">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <ul class="sidebar-items">
+                <li class="sidebar-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">Projects</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">Blogs</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">Biggest Project</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </sidebar>
 
     <header class="header">
         <div class="container">
@@ -49,5 +77,25 @@
             </div>
         </div>
     </header>
+
+    <script>
+        document.querySelector("#sidemenu_trigger").addEventListener('click', () => {
+            document.querySelector(".sidebar-content-box").style.transform = "translateX(0%)";
+
+            document.querySelector(".sidebar-back-box").style.transform = "translateY(0%)";
+
+            document.querySelector("#sidebar").style.display="block"
+        });
+
+        document.querySelector("#sidebar-close").addEventListener('click', () => {
+            document.querySelector(".sidebar-content-box").style.transform = "translateX(-100%)";
+
+            document.querySelector(".sidebar-back-box").style.transform = "translateY(-100%)";
+            
+            setTimeout(() => {
+                document.querySelector("#sidebar").style.display="none"
+            }, 500);
+        })
+    </script>
 </body>
 </html>
