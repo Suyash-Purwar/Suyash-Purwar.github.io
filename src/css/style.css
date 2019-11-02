@@ -830,6 +830,10 @@ a {
         display: none;
     }
 
+    .blogs-panels {
+        width: 96%;
+    }
+
     .blogs-panels .left-blogs-desc {
         font-size: 12px;
         line-height: 1.1;
