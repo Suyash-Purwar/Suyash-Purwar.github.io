@@ -37,3 +37,18 @@ let next_proj = document.querySelector("#next_proj");
 
 prev_proj.addEventListener('click', () => projects_carousel.prev(1))
 next_proj.addEventListener('click', () => projects_carousel.next(1))
+
+let blogs_carousel = new Siema({
+    selector: '.blogs-carousel',
+    onChange: function() {
+        const blogs_indicators = document.getElementsByClassName("blogs-indicator");
+
+        blogs_indicators[this.currentSlide].style.backgroundColor = "#000";
+
+        for (let x = 0; x < blogs_indicators.length; x++) {
+            if (x == this.currentSlide) continue;
+
+            blogs_indicators[x].style.backgroundColor = "#fff";
+        }
+    }
+})

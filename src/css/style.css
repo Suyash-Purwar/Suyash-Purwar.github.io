@@ -429,19 +429,22 @@ a {
     right: 0;
 }
 
-.projects-controller {
+.projects-controller,
+.blogs-controller {
     display: grid;
     justify-content: center;
 }
 
-.projects-indicator-container {
+.projects-indicator-container,
+.blogs-indicator-container {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(7, 1fr);
     width: 150px;
 }
 
-.projects-indicator-container .projects-indicator {
+.projects-indicator-container .projects-indicator,
+.projects-blogs-indicator, .blogs-indicator {
     display: inline-block;
     border-radius: 100%;
     margin: 0 10px;
@@ -451,8 +454,7 @@ a {
 }
 
 .blogs {
-    padding: 10px 0;
-    /* background-color: rgba(1,2,3,0.03); */
+    padding: 10px;
 }
 
 .blogs .blogs-content-container {
@@ -493,6 +495,7 @@ a {
 .blogs-panels .left-blogs-desc {
     padding: 8px 11px;
     font-size: 16px;
+    line-height: 1.2;
     top: 0 !important;
 }
 
@@ -527,6 +530,11 @@ a {
     left: 2%;
 }
 
+/* For smaller screen blogs */
+.blogs-carousel-container,
+.blogs-controller {
+    display: none;
+}
 
 
 
@@ -642,15 +650,47 @@ a {
         font-weight: 600;
     }
 
-    .projects-controller {
+    .projects-controller,
+    .blogs-controller {
         margin-top: 1px;
     }
 
-    .projects-controller .projects-indicator-container .projects-indicator {
+    .projects-controller .projects-indicator-container .projects-indicator,
+    .blogs-controller .blogs-indicator-container .blogs-indicator {
         border: 1.3px solid #000;
         width: 12px;
         height: 12px;
         margin: 0 3px;
+    }
+
+    .blogs {
+        background-color: rgba(0,0,0,0.03);
+        padding: 22px 10px;
+    }
+
+    .blogs-carousel-container {
+        display: block;
+    }
+
+    .blogs-controller {
+        display: grid;
+    }
+
+    .blogs-panels {
+        display: block !important;
+    }
+
+    .blogs .blogs-carousel {
+        padding: 10px 0 15px 0;
+    }
+
+    .blogs .blogs-content-container {
+        display: none;
+    }
+
+    .blogs-panels {
+        width: 93%;
+        margin: 0 auto;
     }
 
     /* Responsive styles for Utility classes */
@@ -731,6 +771,10 @@ a {
     .projects-right-controller i {
         font-size: 15px;
     }
+
+    .blogs-panels .left-blogs-desc {
+        font-size: 13px;
+    }
 }
 
 
@@ -784,5 +828,10 @@ a {
     .projects-left-controller,
     .projects-right-controller {
         display: none;
+    }
+
+    .blogs-panels .left-blogs-desc {
+        font-size: 12px;
+        line-height: 1.1;
     }
 }
