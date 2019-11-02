@@ -81,6 +81,22 @@ a {
     position: relative;
 }
 
+.primary-button {
+    padding: 5px 10px;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    background-color: #000;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 5px;
+}
+
+.primary-button a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .button-secondary {
     padding: 7px 12px;
     border-radius: 20px;
@@ -432,6 +448,83 @@ a {
     width: 14px;
     height: 14px;
     border: 2px solid #000;
+}
+
+.blogs {
+    padding: 10px 0;
+    /* background-color: rgba(1,2,3,0.03); */
+}
+
+.blogs .blogs-content-container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.blogs-content-container .blogs-content-left {
+    padding-top: 10px;
+}
+
+.blogs-panels {
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.14);
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.blogs-panels:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.blogs-panels .blog-image {
+    position: relative;
+    width: 100%;
+}
+
+.blogs-panels .blog-image img {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.blogs-panels .left-blogs-desc {
+    padding: 8px 11px;
+    font-size: 16px;
+    top: 0 !important;
+}
+
+.blogs-content-right .blogs-list {
+    list-style-type: none;
+}
+
+.blogs-content-right .blogs-list .blogs-list-item {
+    position: relative;
+    padding: 20px;
+}
+
+.blogs-content-right .blogs-list .blogs-list-item:not(:last-child) {
+    border-bottom: 1.7px solid rgba(0,0,0,0.2);
+}
+
+.blogs-content-right .blogs-list .blogs-list-item a {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    padding-left: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.blogs-content-right .blogs-list .blogs-list-item span {
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
 }
 
 
