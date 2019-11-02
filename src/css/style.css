@@ -25,6 +25,11 @@ body {
 .u-margin-bottom-large { margin-bottom: 12px !important }
 .u-margin-bottom-extra-large { margin-bottom: 20px !important }
 
+.u-align-center {
+    display: block;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -81,7 +86,6 @@ a {
     border-radius: 20px;
     border: 2px solid #000;
     cursor: pointer;
-    margin: 0;
     background-color: white;
     transition: .5s all;
 }
@@ -101,6 +105,14 @@ a {
 
 .button-secondary:hover a {
     color: #fff;
+}
+
+.show-after-600 { display: none !important; }
+
+@media screen and (max-width:600px) {
+    .show-after-600 {
+        display: block !important;
+    }
 }
 
 
@@ -158,7 +170,6 @@ a {
     color: white;
 }
 
-
 /* Header */
 .header {
     background-image: url("../images/background-1.png");
@@ -188,8 +199,6 @@ a {
     width: 85%;
     margin: 0 auto;
 }
-
-
 
 /* Sidebar */
 .sidebar {
@@ -344,7 +353,7 @@ a {
     grid-template-columns: 8fr 4fr;
 }
 
-.projects-heading-right p.projects-index {
+.projects-heading-right .projects-index {
     text-align: right;
     font-size: 15px;
     font-weight: 800;
@@ -384,6 +393,7 @@ a {
     border-radius: 100%;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
     background-color: white;
+    cursor: pointer;
 }
 
 .projects-left-controller > i,
@@ -422,7 +432,6 @@ a {
     width: 14px;
     height: 14px;
     border: 2px solid #000;
-    cursor: pointer;
 }
 
 
@@ -443,8 +452,25 @@ a {
         letter-spacing: 2px;
     }
 
+    .tertiary-heading {
+        font-size: 15px;
+        line-height: 1;
+    }
+
     .paragraph {
         font-size: 14px;
+    }
+
+    .paragraph-small {
+        font-size: 11px;
+    }
+
+    .button-secondary {
+        padding: 4px 10px;
+        border: 1.5px solid #000;
+    }
+    .button-secondary a {
+        font-size: 10px;
     }
 
     .nav .nav-logo img {
@@ -488,6 +514,50 @@ a {
 
     .social-banner .social-links-wrapper .social-link i {
         font-size: 25px;
+    }
+
+    .projects {
+        padding: 30px 10px;
+    }
+
+    .projects-content-container {
+        margin-top: 0;
+    }
+
+    .projects-main-content {
+        padding: 15px;
+        border-radius: 7px;
+    }
+    .projects-content-heading {
+        grid-template-columns: 9fr 3fr;
+    }
+
+    .projects-left-controller,
+    .projects-right-controller {
+        width: 50px;
+        height: 50px;
+    }
+
+    .projects-left-controller i,
+    .projects-right-controller i {
+        font-size: 20px;
+    }
+
+    .projects-heading-right .projects-index {
+        font-size: 14px;
+        margin-top: 3px;
+        font-weight: 600;
+    }
+
+    .projects-controller {
+        margin-top: 1px;
+    }
+
+    .projects-controller .projects-indicator-container .projects-indicator {
+        border: 1.3px solid #000;
+        width: 12px;
+        height: 12px;
+        margin: 0 3px;
     }
 
     /* Responsive styles for Utility classes */
@@ -545,6 +615,29 @@ a {
     .introduction .introduction-heading img {
         width: 50px;
     }
+
+    .projects-content-heading {
+        display: block;
+    }
+
+    .projects-image {
+        width: 90%;
+    }
+
+    .projects-heading-right {
+        display: none;
+    }
+
+    .projects-left-controller,
+    .projects-right-controller {
+        width: 40px;
+        height: 40px;
+    }
+
+    .projects-left-controller i,
+    .projects-right-controller i {
+        font-size: 15px;
+    }
 }
 
 
@@ -562,6 +655,11 @@ a {
         font-weight: 700;
     }
 
+    .tertiary-heading {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
     .nav .nav-logo img {
         width: 110%;
     }
@@ -577,11 +675,21 @@ a {
 
     .social-banner .social-links-wrapper .social-link {
         width: 90%;
-        /* position: relative; */
         border-radius: 0;
     }
 
     .social-banner .social-links-wrapper .social-link i {
         font-size: 25px;
+    }
+
+    .projects-main-content {
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.14);
+        width: 96%;
+    }
+
+    .projects-left-controller,
+    .projects-right-controller {
+        display: none;
     }
 }
