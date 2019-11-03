@@ -82,12 +82,12 @@ a {
 }
 
 .primary-button {
-    padding: 5px 10px;
+    padding: 10px 30px;
     box-shadow: 0 0px 10px rgba(0,0,0,.3);
     background-color: #000;
     border: none;
-    padding: 10px 19px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .primary-button a {
@@ -454,7 +454,7 @@ a {
 }
 
 .blogs {
-    padding: 10px;
+    padding: 10px 10px 55px 10px;
 }
 
 .blogs .blogs-content-container {
@@ -536,6 +536,49 @@ a {
     display: none;
 }
 
+.big-project {
+    padding: 50px 10px;
+    background-color: rgba(0,0,0,0.03);
+    
+}
+
+.big-project .big-project-title,
+.big-project .big-project-subtitle {
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.big-project .big-project-subtitle {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.big-project .big-project-title {
+    position: relative;
+    left: -2px;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.big-project .bp-container {
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.bp-container .bp-content-container .bp-small-subtitle {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.bp-container .bp-image-container img {
+    width: 100%;
+    position: relative;
+    display: block;
+}
 
 
 @media screen and (max-width: 900px) {
