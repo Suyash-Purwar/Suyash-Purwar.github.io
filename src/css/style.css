@@ -630,12 +630,12 @@ a {
     top: 2px;    
 }
 
-.contact .social-link-items .social-link-item {
+.social-link-items .social-link-item {
     display: inline-block;
     margin-right: 20px;
 }
 
-.contact .social-link-items .social-link-item a i {
+.social-link-items .social-link-item a i {
     color: white;
     font-size: 20px;
 }
@@ -643,8 +643,6 @@ a {
 .contact .contact-container .contact-container-right {
     padding: 25px;
 }
-
-.form { }
 
 .form .form-group-halves {
     display: grid;
@@ -684,6 +682,12 @@ a {
     max-width: 100%;
     position: relative;
 }
+
+.info-banner {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 900px) {
     .container {
@@ -897,6 +901,45 @@ a {
     .contact .contact-container .contact-container-right {
         padding: 0;
     }
+
+    .info-banner {
+        display: block;
+        background-image: url("../images/background-1.png");
+        background-size: cover;
+        padding: 25px 10px;
+        background-position: left top;
+    }
+
+    .info-banner .info-banner-heading {
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .info-banner .info-banner-heading:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    .info-banner .info-banner-para {
+        font-size: 12px;
+        line-height: 1.2;
+        color: #fff;
+        text-align: center;
+    }
+
+    .info-banner .social-link-items {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-banner .social-link-items .social-link-item {
+        display: inline;
+    }
+
     /* Responsive styles for Utility classes */
     .u-margin-top-small { margin-top: 2px !important }
     .u-margin-top-medium { margin-top: 5px !important }
@@ -1073,5 +1116,14 @@ a {
 
     .big-project .bp-container {
         padding-top: 25px;
+    }
+
+    .info-banner .info-banner-heading:not(:first-child) {
+        margin-top: 18px;
+    }
+
+    .info-banner .info-banner-heading {
+        font-size: 17px;
+        margin-bottom: 5px;
     }
 }
