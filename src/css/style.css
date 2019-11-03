@@ -539,7 +539,6 @@ a {
 .big-project {
     padding: 50px 10px;
     background-color: rgba(0,0,0,0.03);
-    
 }
 
 .big-project .big-project-title,
@@ -578,6 +577,10 @@ a {
     width: 100%;
     position: relative;
     display: block;
+}
+
+.big-project .bp-container .bp-content-container img {
+    display: none;
 }
 
 
@@ -736,6 +739,45 @@ a {
         margin: 0 auto;
     }
 
+    .big-project {
+        padding: 35px 10px;
+        background-color: #fff; 
+    }
+
+    .big-project .big-project-subtitle {
+        font-size: 25px;
+    }
+
+    .big-project .big-project-title {
+        font-size: 40px;
+    }
+
+    .big-project .bp-container {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .big-project .bp-container .bp-image-container {
+        display: none;
+    }
+
+    .big-project .bp-container .bp-content-container img {
+        display: block;
+        float: left;
+        width: 30%;
+        padding: 0 30px 10px 0;
+    }
+
+    .big-project .bp-container .bp-content-container .bp-small-subtitle {
+        margin-bottom: 4px;
+        font-size: 18px;
+    }
+
+    .big-project .bp-container .bp-content-container .primary-button {
+        margin: 0 auto;
+        display: block;
+    }
+
     /* Responsive styles for Utility classes */
     .u-margin-top-small { margin-top: 2px !important }
     .u-margin-top-medium { margin-top: 5px !important }
@@ -818,6 +860,29 @@ a {
     .blogs-panels .left-blogs-desc {
         font-size: 13px;
     }
+
+    .big-project {
+        padding: 30px 10px;
+    }
+
+    .big-project .big-project-subtitle {
+        font-size: 18px;
+    }
+
+    .big-project .big-project-title {
+        font-size: 28px;
+        left: -1px;
+    }
+
+    .big-project .bp-container .bp-content-container img {
+        padding: 0 15px 5px 0;
+        width: 35%;
+    }
+
+    .big-project .bp-container .bp-content-container .bp-small-subtitle {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
 }
 
 
@@ -880,5 +945,9 @@ a {
     .blogs-panels .left-blogs-desc {
         font-size: 12px;
         line-height: 1.1;
+    }
+
+    .big-project .bp-container {
+        padding-top: 25px;
     }
 }
