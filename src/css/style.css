@@ -318,7 +318,7 @@ a {
     background-image: url("../images/background-1.png");
     padding: 55px 10px;
     background-attachment: fixed;
-    background-position: right bottom;
+    background-position: center;
 }
 
 .social-banner .social-links-wrapper {
@@ -687,6 +687,70 @@ a {
     display: none;
 }
 
+.footer {
+    background-image: url("../images/background-1.png");
+    background-position: center top;
+    background-attachment: fixed;
+    position: absolute;
+    padding: 30px 10px 10px 10px;
+    width: 100%;
+}
+
+.footer .footer-img-container {
+    width: 100%;
+}
+
+.footer .footer-img-container img {
+    width: 130px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer .social-link-items {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer .social-link-items .social-link-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer .social-link-items .social-link-item a i{
+    font-size: 18px;
+}
+
+.footer .footer-text-container {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer .footer-text-container > * {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.footer .footer-text {
+    color: #fff;
+    font-size: 10px;
+}
+
+.footer .footer-text-container .footer-vert-line {
+    height: 18px;
+    width: 1px;
+    background-color: #fff;
+    position: relative;
+    top: 4px;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 900px) {
@@ -906,6 +970,7 @@ a {
         display: block;
         background-image: url("../images/background-1.png");
         background-size: cover;
+        background-attachment: fixed;
         padding: 25px 10px;
         background-position: left top;
     }
@@ -938,6 +1003,31 @@ a {
 
     .info-banner .social-link-items .social-link-item {
         display: inline;
+    }
+
+    .footer {
+        padding: 50px 10px 30px 10px;
+        background-position: center;
+    }
+
+    .footer .footer-img-container img {
+        width: 130px;
+    }
+
+    .footer .social-link-items .social-link-item a i {
+        font-size: 22px;
+    }
+
+    .footer .footer-text-container {
+        margin-top: 50px;
+    }
+
+    .footer .footer-text-container > * {
+        display: block;
+    }
+
+    .footer .footer-vert-line {
+        display: none;
     }
 
     /* Responsive styles for Utility classes */
@@ -1123,7 +1213,19 @@ a {
     }
 
     .info-banner .info-banner-heading {
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom: 5px;
+    }
+
+    .footer {
+        padding: 45px 10px 30px 10px;
+    }
+
+    .footer .footer-text-container {
+        margin-top: 40px;
+    }
+
+    .footer .footer-img-container img {
+        width: 110px;
     }
 }
