@@ -52,3 +52,9 @@ let blogs_carousel = new Siema({
         }
     }
 })
+
+let prev_blog = document.querySelector("#prev_blog");
+let next_blog = document.querySelector("#next_blog");
+
+prev_blog.addEventListener('click', () => blogs_carousel.prev(1))
+next_blog.addEventListener('click', () => blogs_carousel.next(1))
