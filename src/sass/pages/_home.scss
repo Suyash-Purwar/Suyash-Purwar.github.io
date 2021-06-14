@@ -1,0 +1,46 @@
+.header {
+    background-image: url("../images/background-1.png");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    &__content {
+        padding: 1rem;
+        transform: translateY(-1rem);
+
+        .paragraph {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+
+    &__profile-image {
+        margin: 0 auto;
+        display: block;
+        width: 20%;
+        position: relative;
+    }
+}
+
+.introduction {
+    width: 100%;
+    padding: 5.5rem 1rem;
+
+    &__heading {
+        h3, img {
+            display: inline-block;
+        }
+
+        img {
+            width: 5.5%;
+            top: 1rem;
+            margin-right: 1rem;
+            position: relative;
+        }
+    }
+}

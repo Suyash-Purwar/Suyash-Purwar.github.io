@@ -1,0 +1,41 @@
+.primary-button {
+    padding: 10px 30px;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-button a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-secondary {
+    padding: .7rem 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s all;
+}
+
+.button-secondary a {
+    transition: .5s all;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000;
+    font-family: 'Montserrat';
+}
+
+.button-secondary:hover {
+    background-color: #000;
+    box-shadow: 0 .6rem 1rem rgba(0,0,0,0.26);
+}
+
+.button-secondary:hover a {
+    color: #fff;
+}
