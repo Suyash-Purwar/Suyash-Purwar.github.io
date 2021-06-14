@@ -13,55 +13,56 @@
 <body>
     <div class="container">
         <nav class="nav">
-            <div class="nav-logo">
+            <div class="nav__logo">
                 <img src="images/Logo.png" alt="Suyash Purwar Logo">
             </div>
-            <ul class="nav-items">
-                <li class="nav-item">
+            
+            <ul class="nav__items">
+                <li class="nav__item">
                     <a href="#">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">Blogs</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">Biggest Project</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">Contact</a>
                 </li>
             </ul>
 
-            <div class="nav-burger" id="sidemenu_trigger">
+            <div class="nav__burger" id="sidemenu_trigger">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </div>
 
     <sidebar class="sidebar" id="sidebar">
-        <div class="sidebar-back-box"></div>
+        <div class="sidebar__back-box"></div>
 
-        <div class="sidebar-content-box">
-            <div class="sidebar-close" id="sidebar-close">
+        <div class="sidebar__content-box">
+            <div class="sidebar__close" id="sidebar-close">
                 <i class="fas fa-times"></i>
             </div>
 
-            <ul class="sidebar-items">
-                <li class="sidebar-item">
+            <ul class="sidebar__items">
+                <li class="sidebar__item">
                     <a href="#">About</a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar__item">
                     <a href="#">Projects</a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar__item">
                     <a href="#">Blogs</a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar__item">
                     <a href="#">Biggest Project</a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar__item">
                     <a href="#">Contact</a>
                 </li>
             </ul>
@@ -70,18 +71,18 @@
 
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <img src="images/profile-pic.png" alt="Suyash Purwar" class="header-profile-image">
-                <h1 class="primary-heading text-white text-align-center text-uppercase u-margin-top-extra-large">Suyash Purwar</h1>
-                <h6 class="paragraph text-white text-align-center u-margin-top-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum? Adipisci, eius architecto. Non magni dolore sapiente laboriosam vitae beatae iste commodi ipsum ut ab illo nam natus, reiciendis id modi sed neque, itaque suscipit. Fuga vel porro ipsam a, cum beatae recusandae temporibus facilis aut soluta inventore obcaecati.</h6>
+            <div class="header__content">
+                <img src="images/profile-pic.png" alt="Suyash Purwar" class="header__profile-image">
+                <h1 class="primary-heading u-margin-top-extra-large">Suyash Purwar</h1>
+                <h6 class="paragraph margin-top-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum? Adipisci, eius architecto. Non magni dolore sapiente laboriosam vitae beatae iste commodi ipsum ut ab illo nam natus, reiciendis id modi sed neque, itaque suscipit. Fuga vel porro ipsam a, cum beatae recusandae temporibus facilis aut soluta inventore obcaecati.</h6>
             </div>
         </div>
     </header>
 
     <section class="introduction">
         <div class="container" style="display: block;">
-            <div class="introduction-heading">
-                <img src="images/hand.png" alt="hello" class="introduction-hello-image">
+            <div class="introduction__heading">
+                <img src="images/hand.png" alt="hello" class="introduction__hello-image">
                 <h3 class="secondary-heading">Hello World</h3>
             </div>
     
@@ -91,191 +92,14 @@
         </div>
     </section>
 
-    <section class="social-banner">
+    <section class="social-b">
         <div class="container">
-            <div class="social-links-wrapper">
-                <div class="social-link"><a href="#"><i class="fab fa-twitter"></i></a></div>
-                <div class="social-link"><a href="#"><i class="fab fa-linkedin"></i></a></i></div>
-                <div class="social-link"><a href="#"><i class="fab fa-github"></i></a></i></div>
-                <div class="social-link"><a href="#"><i class="fas fa-envelope"></i></a></i></div>
+            <div class="social-b__links-wrapper">
+                <div class="social-b__link"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                <div class="social-b__link"><a href="#"><i class="fab fa-linkedin"></i></a></i></div>
+                <div class="social-b__link"><a href="#"><i class="fab fa-github"></i></a></i></div>
+                <div class="social-b__link"><a href="#"><i class="fas fa-envelope"></i></a></i></div>
             </div>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="container">
-            <h3 class="secondary-heading">Projects</h3>
-
-            <div class="projects-content-container">
-                <div class="projects-carousel siema">
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">01 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">02 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">03 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">04 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">05 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas a ducimus mollitia voluptate!</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">06 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-
-                    <div class="projects-main-content">
-                        <div class="projects-content-heading">
-                            <div class="projects-heading-left">
-                                <h5 class="tertiary-heading">Family wall - Your family assistant</h5>
-                                <p class="paragraph-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos id asperiores facere fugiat veritatis, quas</p>
-                            </div>
-                            <div class="projects-heading-right">
-                                <p class="projects-index">07 / 07</p>
-                                <button class="button-secondary u-margin-top-medium"><a href="#">READ PROCESS</a></button>
-                            </div> 
-                        </div>
-    
-                        <div class="projects-image-container">
-                            <img src="images/project1.png" alt="Project Image" class="projects-image">
-                        </div>
-
-                        <button class="button-secondary show-after-600 u-align-center">
-                            <a href="#">READ PROCESS</a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="projects-left-controller" id="prev_proj">
-                    <i class="fas fa-arrow-left"></i>
-                </div>
-                <div class="projects-right-controller" id="next_proj">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-            </div>
-
-            <div class="projects-controller">
-                <div class="projects-indicator-container">
-                    <div class="projects-indicator" style="background-color: #000"></div>
-                    <div class="projects-indicator"></div>
-                    <div class="projects-indicator"></div>
-                    <div class="projects-indicator"></div>
-                    <div class="projects-indicator"></div>
-                    <div class="projects-indicator"></div>
-                    <div class="projects-indicator"></div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -284,8 +108,8 @@
             <h3 class="secondary-heading u-margin-bottom-medium">TECHNICAL BLOGS</h3>
 
             <!-- Code for desktop screen -->
-            <div class="blogs-content-container">
-                <div class="blogs-content-left">
+            <div class="blogs__content-wrapper">
+                <div class="blogs__content-left">
                     <div class="blogs-panels">
                         <div class="blog-image">
                             <img src="images/blog1.jpg" alt="Blogs Images">
@@ -301,24 +125,24 @@
                         <p class="left-blogs-desc">AI + Neuroscience = Artificial General Intelligence</p>
                     </div>
                 </div>
-                <div class="blogs-content-right">
-                    <ul class="blogs-list">
-                        <li class="blogs-list-item">
+                <div class="blogs__content-right">
+                    <ul class="blogs__list">
+                        <li class="blogs__list-item">
                             <span>01</span><a href="#">What is Technological Singularity?</a>
                         </li>
-                        <li class="blogs-list-item">
+                        <li class="blogs__list-item">
                             <span>02</span><a href="#">What is Connectome?</a>
                         </li>
-                        <li class="blogs-list-item">
+                        <li class="blogs__list-item">
                             <span>03</span><a href="#">How neuroscience is playing an essential role in AI & ML</a>
                         </li>
-                        <li class="blogs-list-item">
+                        <li class="blogs__list-item">
                             <span>04</span><a href="#">What roles do Glia Cells play?</a>
                         </li>
-                        <li class="blogs-list-item">
+                        <li class="blogs__list-item">
                             <span>05</span><a href="#">Why our brain is so smart? How did our brain eveolved over the time?</a>
                         </li>
-                        <li class="blogs-list-item">
+                        <li class="blogs__list-item">
                             <span>06</span><a href="#">What was Move 37?</a>
                         </li>
                     </ul>
@@ -329,12 +153,10 @@
                 </div>
             </div>
 
-
-
             <!-- Code for smaller screens -->
-            <div class="blogs-carousel-container">
-                <div class="blogs-carousel-area">
-                    <div class="blogs-carousel siema">
+            <div class="blogs__carousel-container">
+                <div class="blogs__carousel-area">
+                    <div class="blogs__carousel siema">
                         <div class="blogs-panels">
                             <div class="blog-image">
                                 <img src="images/blog2.png" alt="Blogs Images">
@@ -409,131 +231,32 @@
         </div>
     </section>
 
-    <section class="big-project">
-        <div class="container">
-            <p class="big-project-subtitle">The</p>
-            <p class="big-project-title">Biggest Project</p>
-            <div class="big-project-subtitle">Ever</div>
-
-            <div class="bp-container">
-                <div class="bp-image-container">
-                    <img src="images/csbuzz-2.png" alt="CS BUZZ">
-                </div>
-                <div class="bp-content-container">
-                    <img src="images/csbuzz-2.png" alt="CS BUZZ">                    
-                    <p class="bp-small-subtitle">CS BUZZ</p>
-
-                    <p class="paragraph u-margin-bottom-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim laudantium saepe tempora consequuntur odio eum omnis ad earum, quas ratione nihil. Laudantium sint nam repellendus quibusdam, maiores ipsam minus? <b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Fugit amet quas aliquam odio blanditiis, sint excepturi enim placeat distinctio nesciunt!</p>
-
-                    <p class="paragraph u-margin-bottom-extra-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam nihil quisquam assumenda. <b>Sed deserunt</b> quis maxime ducimus saepe <b>necessitatibus</b> at rerum atque aliquam consectetur, nam facere nemo excepturi ipsa magni quae voluptates iste modi cupiditate aperiam omnis debitis aspernatur architecto! Exercitationem minus porro modi!</p>
-
-                    <button class="primary-button">
-                        <a href="#">VISIT SITE</a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="info-banner">
-        <l class="container">
-            <p class="info-banner-heading">LET'S TALK</p>
-            <p class="info-banner-para">+91 9058765425</p>
-            <p class="info-banner-para">suyashpurwar4035@gmail.com</p>
-
-            <p class="info-banner-heading">CONNECT WITH ME</p>
-            <ul class="social-link-items">
-                <li class="social-link-item">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li class="social-link-item">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="social-link-item">
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h3 class="secondary-heading">Contact</h3>
-
-            <div class="contact-container">
-                <div class="contact-container-left">
-                    <h5 class="contact-heading">Easiest Way</h5>
-
-                    <ul class="contact-ul">
-                        <li class="contact-li">
-                            <i class="fas fa-phone"></i>
-                            <p class="paragraph-small" style="font-weight:500; letter-spacing: 1px">+91 9058765424</p>
-                        </li>
-                        <li class="contact-li">
-                            <i class="fas fa-envelope"></i>
-                            <p class="paragraph-small" style="font-weight:500; letter-spacing: 1px">suyashpurwar4035@gmail.com</p>
-                        </li>
-                    </ul>
-
-                    <h5 class="contact-heading">Let's Connect</h5>
-
-                    <ul class="social-link-items">
-                        <div class="social-link-item">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <div class="social-link-item">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <div class="social-link-item">
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </ul>
-                </div>
-                <div class="contact-container-right">
-                    <h5 class="contact-heading hide-after-900" style="color:#000;">Shoot me a message</h5>
-                    <form class="form">
-                        <div class="form-group-halves">
-                            <input type="text" id="name" placeholder="John Doe" class="form-input">
-                            <input type="email" id="email" placeholder="example@example.com" class="form-input">
-                        </div>
-                        <div class="form-group-full">
-                            <textarea id="message" placeholder="Write message here..." class="form-textarea"></textarea>
-                        </div>
-                        <button class="primary-button u-margin-top-large" type="submit">
-                            <a href="#">SEND</a>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
-            <div class="footer-img-container">
+            <div class="footer__img-container">
                 <img src="images/Logo.png" alt="Logo">
             </div>
 
-            <ul class="social-link-items">
-                <div class="social-link-item">
+            <ul class="social__link-items">
+                <div class="socia__link-item">
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="social-link-item">
+                <div class="socia__link-item">
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="social-link-item">
+                <div class="socia__link-item">
                     <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="social-link-item">
+                <div class="socia__link-item">
                     <a href="#"><i class="fab fa-github"></i></a>
                 </div>
             </ul>
         </div>
 
-        <div class="footer-text-container">
-            <p class="footer-text">Designed and Developed by Suyash Purwar</p>
-            <span class="footer-vert-line"></span>
-            <p class="footer-text">All rights reserved, 2019</p>
+        <div class="footer__text-container">
+            <p class="footer__text">Designed and Developed by Suyash Purwar</p>
+            <span class="footer__vert-line"></span>
+            <p class="footer__text">All rights reserved, 2019</p>
         </div>
     </footer>
 

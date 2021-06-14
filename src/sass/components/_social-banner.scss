@@ -1,0 +1,29 @@
+.social-b {
+    background-image: url("../images/background-1.png");
+    padding: 5.5rem 1rem;
+    background-attachment: fixed;
+    background-position: center;
+
+    &__links-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    &__link {
+        background-color: white;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 100%;
+        position: relative;
+        margin: 0 auto;
+
+        i {
+            position: absolute;
+            font-size: 40rem;
+            top: 50%;
+            left: 50%;
+            color: black;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

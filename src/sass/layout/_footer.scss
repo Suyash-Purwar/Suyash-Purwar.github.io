@@ -1,0 +1,58 @@
+.footer {
+    background-image: url("../images/background-1.png");
+    background-position: center top;
+    background-attachment: fixed;
+    position: absolute;
+    padding: 3rem 1rem 1rem 1rem;
+    width: 100%;
+
+    &__img-container {
+        width: 100%;
+
+        img {
+            width: 13rem;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__link-items {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    &__link-item {
+        display: inline;
+        margin: 0 1.5rem;
+
+        i {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__text-container {
+        margin-top: 2rem;
+        text-align: center;
+        position: relative;
+
+        & > * {
+            display: inline-block;
+            margin: 0 .5rem;
+            color: #fff;
+        }
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    &__vert-line {
+        height: 1.8rem;
+        width: 1px;
+        background-color: #fff;
+        position: relative;
+        top: .4rem;
+    }
+}
