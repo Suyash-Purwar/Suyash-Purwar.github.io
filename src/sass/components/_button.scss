@@ -39,3 +39,36 @@
 .button-secondary:hover a {
     color: #fff;
 }
+
+.button-tertiary {
+    display: inline-block;
+    padding: 2px 0;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s;
+    color: $color-white;
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 30%;
+        height: 1px;
+        background-color: $color-white;
+        transition: all .2s;
+        border-radius: 3rem;
+
+        @include respond(tab-portrait) {
+            margin: 0 auto;
+        }
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    @include respond(tab-portrait) {
+        font-size: 2rem;
+    }
+}

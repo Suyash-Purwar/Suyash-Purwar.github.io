@@ -28,7 +28,8 @@
 0 - 450px:        Phone small
 450 - 600px:      Phone
 600 - 900px:      Tablet portrait
-900px+:      is where normal styles apply
+900 - 1200px:     Table landscape
+1200+:      is where normal styles apply
 
 $breakpoint argument choices:
 - phone-s => 31.25em
@@ -49,10 +50,22 @@ $breakpoint argument choices:
             @content
         };
     }
+
+    @if $breakpoint == tab-portrait-s {  // 750px
+        @media (max-width: 46.87em) {
+            @content;
+        }
+    }
     
     @if $breakpoint == tab-portrait {
         @media (max-width: 56.25em) {  // 900px
             @content
         };
     }
+
+    @if $breakpoint == tab-landscape {  // 1200px
+        @media (max-width: 75em) {
+            @content
+        }
+    };
 }
